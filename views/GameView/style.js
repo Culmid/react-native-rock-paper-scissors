@@ -1,5 +1,9 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
-  // Styles Here
+  buttonsContainer: {
+    flexDirection: "row",
+    width: "100%",
+    justifyContent: "space-between",
+  },
 });

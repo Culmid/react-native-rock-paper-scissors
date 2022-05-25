@@ -4,7 +4,8 @@ export default StyleSheet.create({
   outerContainer: {
     width: 100,
     height: 100,
-    backgroundColor: "#ccc",
+    backgroundColor: "#ead7f7",
+    borderRadius: 50,
   },
   innerContainer: {
     flex: 1,

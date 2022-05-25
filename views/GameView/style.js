@@ -1,6 +1,11 @@
 import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
+  gameContainer: {
+    backgroundColor: "#dac0ed",
+    padding: 10,
+    borderRadius: 10,
+  },
   chooseHeader: {
     width: "100%",
     marginBottom: 15,

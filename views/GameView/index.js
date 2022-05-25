@@ -13,7 +13,7 @@ export default function GameView() {
   }
 
   return (
-    <View>
+    <View style={style.gameContainer}>
       <Text style={style.chooseHeader}>Choose an Option</Text>
       <View style={style.buttonsContainer}>
         <GameButton type="rock" onPress={() => handleButtonClick("rock")} />

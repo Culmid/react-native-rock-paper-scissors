@@ -5,6 +5,7 @@ export default StyleSheet.create({
     width: "100%",
     marginTop: 30,
     alignItems: "center",
+    backgroundColor: "#dac0ed",
   },
   resultStatement: {
     fontSize: 22,

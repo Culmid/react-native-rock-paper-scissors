@@ -4,7 +4,7 @@ const choices = ["rock", "paper", "scissors"];
 
 /**
  * Plays a round of Rock, Paper and Scissors
- * @param {string} userChoice The user's choice of 'rock', 'paper' or 'scissors'
+ * @param {string} player The user's choice of 'rock', 'paper' or 'scissors'
  * @example
  * ```js
  * const result = playRound('rock');
@@ -12,15 +12,15 @@ const choices = ["rock", "paper", "scissors"];
  * // of "rock"
  * ```
  */
-function playRound(userChoice) {
+function playRound(player) {
   const randomNumber = getRandomNumber(0, 2);
-  const computerChoice = choices[randomNumber];
+  const computer = choices[randomNumber];
 
-  let round = { userChoice, computerChoice, winner: null };
+  let round = { player, computer, winner: null };
 
-  if (userChoice === computerChoice) {
+  if (player === computer) {
     round.winner = "draw";
-  } else if (randomNumber === (choices.indexOf(userChoice) + 1) % 3) {
+  } else if (randomNumber === (choices.indexOf(player) + 1) % 3) {
     round.winner = "computer";
   } else {
     round.winner = "player";
